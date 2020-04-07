@@ -6,7 +6,7 @@ import Hooks from './Hooks';
 function App() {
   return (
     <div className="App">
-      <Hooks/>
+      <Hooks name={'John'}/>
     </div>
   );
 }
