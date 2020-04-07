@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Skeleton from '@material-ui/lab/Skeleton'
 
 export const aFunc = ()=>{};
 export default function Hooks(props) {
@@ -13,6 +14,11 @@ export default function Hooks(props) {
         <React.Fragment>
             <p>Hi, I am {name}</p>
             <p>click count:{clicks}</p>
+            <div>
+              <Skeleton variant="text" />
+              <Skeleton variant="text" />
+              <Skeleton variant="rect" width={210} height={110} />
+            </div>
             <button onClick={doSomething} data-something="Default">
                 Default</button>
         </React.Fragment>
